@@ -1,12 +1,8 @@
-github_users:
-  - torvalds
-  - alshedivat
-
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - davidsaOpenu/xv6 
+  - davidsaOpenu/simulator
+  - davidsaOpenu/kernel
+  - davidsaOpenu/nvme-cli
+  - davidsaOpenu/qemu
+  - davidsaOpenu/dnvme
+  - dsariel/swiftacular
