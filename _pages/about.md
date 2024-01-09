@@ -19,3 +19,4 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 Hi! I teach the [Workshop in Operating Systems](https://www.openu.ac.il/courses/20587.htm) at the Open University of Israel. In the workshop, students make real contributions to open-source systems projects such as eVSSIM and OpenStack Swift in a hands-on and enjoyable manner.
+
