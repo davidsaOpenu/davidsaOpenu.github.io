@@ -1,11 +1,13 @@
 ---
-layout: page
-permalink: /teaching/
-title: OSW-2026b 
-description: Operating systems workshop 2026b
-nav: true 
-nav_order: 6
+# layout: page
+# permalink: /teaching/
+# title: courses 
+# description: 2025 b
+# nav: true 
+# nav_order: 6
 ---
+
+# OSW Course Description
 
 ## Registration Process
 
@@ -80,23 +82,22 @@ The activities during the summer semester include:
   - **Interpret logs** from the **continuous integration (CI)** system.
 
 ---
-## Important Due Dates
-- **Maman 11** – due by **22 May 2026** - 3%
-- **Maman 12** – due by **19 June 2026** - 7%
-- **Maman 13** - Project Presentation – to be scheduled **between 1 May and 19 June 2026** - 6%
-- **Maman 14** - Project Specification – due by **15 July 2026** - 20%
-- **Maman 15** - Final Project Implementation – due by **30 September 2026** - 64%
 
-Note:
-- Due date does not include weekends and holidays; i.e., 22 May 2026 is Friday, therefore submitting before 23:59 on 23 May 2026 Saturday implies no penalty.
-- Missing due date for an unjustified reason implies -2 points per week. For example, submitting anytime between 00:00 on 24 May 2026 and 23:59 on 30 May 2026 implies a -2 points reduction.     
+## Important Due Dates
+
+- **Maman 11** – due by **6 May 2025**
+- **Maman 12** – due by **29 May 2025**
+- **Project Presentation** – to be scheduled **between 6 May and 29 June 2025**
+- **Maman 13** (Project Specification) – due by **29 June 2025**
+- **Maman 14** (Final Project Implementation) – due by **30 September 2025**
+
 
 ### Clarification Regarding the Tasks During the Semester
 
 #### First and Second Assignments (Maman 11/12)
 
 - Assignments (Maman 11/12) are published on the Trello board.
-- Each student should choose an epic from the **eVSSIM**, or **Swift** boards and identify which assignments are related to that epic.
+- Each student should choose an epic from the **eVSSIM**, **Swift**, or **xv6** boards and identify which assignments are related to that epic.
 - Each student should assign themselves to an epic (no more than **2 students per epic**) and also to the Trello cards related to the epic.
 - Assignments labeled *"can be done in pairs"* may be completed in pairs as indicated. All other assignments are **individual**.
 
@@ -117,7 +118,7 @@ Note:
     - Each card must include a **Definition of Done (DoD)** that clearly describes:
       - Features implemented at this stage  
       - Corresponding tests for the implemented code
-- Toward the end of the semester, after work on Maman 13 begins, **30-minute weekly sync meetings** for the **eVSSIM**, and **Swift** tracks will be scheduled.
+- Toward the end of the semester, after work on Maman 13 begins, **30-minute weekly sync meetings** for the **eVSSIM**, **Swift**, and **xv6** tracks will be scheduled.
 
 
 #### Student Talks
@@ -127,19 +128,13 @@ Note:
 - **Google Slides** (in English) should be shared with the instructor **at least one week before a scheduled talk** for comments and feedback.
 - Reuse and improvement of existing slides (attached to the corresponding Trello card) is encouraged.
 
-#### Assignment (maman) / Story Submissions & CI
+#### Assignment Submissions & CI
 
 - Gerrit change requests must **pass CI regression checks**.
-- Each student (or pair) is responsible for obtaining **peer reviews** from **at least two reviewers from their track** (eVSSIM, or Swift) by requesting reviews via the appropriate WhatsApp group.
+- Each student (or pair) is responsible for obtaining **peer reviews** from **at least two reviewers from their track** (eVSSIM, Swift, or xv6) by requesting reviews via the appropriate WhatsApp group.
 - **Instructors will assess the quality of the peer reviews**.
   - Review quality will impact the **reviewer’s own assignment grade**.
-- After a Gerrit change is merged, a **text file** containing 
-  - links to the Gerrit change
-  - to the Gerrit change review performed for another Maman/Story
-  - First and last names of 2 peers performed peer reviews for the submitted assignment.
-should be submitted via the university's **electronic submission system**.
-
-Detailed description on Code Reviews including scoreing that impacts the Maman/Story grade is avialabe [here](https://docs.google.com/document/d/1SGfbdBjPmZa9fKiH9QKYfxB6MXNwQPDtbs_k52ztMUk/edit?usp=sharing)
+- After a Gerrit change is merged, a **text file** containing a link to the Gerrit change should be submitted via the university’s **electronic submission system**.
 
 
 ### Clarification Regarding the Tasks During the Summer Semester
@@ -153,7 +148,7 @@ Detailed description on Code Reviews including scoreing that impacts the Maman/S
     - Briefly present the progress made on their current story  
     - Share the plan for the upcoming week  
     - Raise any flags, unresolved issues, or questions requiring broader input
-- Students are encouraged **not to wait** for the meetings to raise issues. They should use the appropriate WhatsApp groups (general or track-specific for eVSSIM, or Swift) to share problems or concerns as early as possible. The same applies to concerns about the **merge order of change requests**.
+- Students are encouraged **not to wait** for the meetings to raise issues. They should use the appropriate WhatsApp groups (general or track-specific for eVSSIM, Swift, or xv6) to share problems or concerns as early as possible. The same applies to concerns about the **merge order of change requests**.
 - **Assignment Submissions & CI** rules apply to every story.
 - After all 7 to 8 Gerrit change requests related to the stories are merged, a **text file** containing links to the Gerrit changes should be submitted via the university’s **electronic submission system**.
 
@@ -170,6 +165,7 @@ Detailed description on Code Reviews including scoreing that impacts the Maman/S
 | Project   | Description | HW/SW Requirements | Skills | Resources |
 |-----------|-------------|---------------------|-----------|-----------|
 | **eVSSIM** | SSD simulator based on QEMU/KVM, exposing NVMe protocol to guest OS. Used to evaluate SSD performance under various firmware designs. | 4–64 GB RAM<br><br> 150 GB disk<br><br> Cosmos OpenSSD Platform (for one epic)<br><br>Ubuntu 24.04 (bare-metal) | C (high)<br><br> C++ (basic)<br><br> Python (basic) | <br><br> [VSSIM article](https://oslab.kaist.ac.kr/wp-content/uploads/esos_files/publication/conferences/international/VSSIM_Yoo_MSST_2013.pdf)<br><br> [eVSSIM architecture](https://docs.google.com/document/d/1VFnmmh0g-RThOu-YD6GB5WaUsFgF3pS1poOxfimpdtE/edit?usp=sharing)<br><br> [Project management board](https://trello.com/b/eMxey6Rr/evssim)<br><br> [Analytical modelling article](https://oslab.kaist.ac.kr/wp-content/uploads/esos_files/publication/conferences/international/VSSIM_IOSimulator.pdf)<br><br> [NVMe spec](https://nvmexpress.org/specification/nvm-express-base-specification/) |
+| **xv6** | Reimplementation of Sixth Edition Unix in ANSI C for x86 multiprocessor systems. Used in MIT's 6.828 Operating Systems course. | 4 GB RAM<br><br> 150 GB disk<br><br> Ubuntu 24.04 (bare-metal) |  C (high) | [Project management board](https://trello.com/b/whs0LS9B/xv6)<br><br> [Objfs spec](https://docs.google.com/document/d/1p8GKxLI8MVo4ND0PoggGx9n4QA1sabaNfr0jAo0FOGs/edit#heading=h.renznclxfaio)<br><br> [XV6 containers, namespaces, cgroups](https://docs.google.com/document/d/1iLGOXVAlkl9Ee2VLVfnYWHt4efNy5_NapldoVtK4Nzo/edit#heading=h.qlemqf813ps)<br><br> [Wiki](https://en.wikipedia.org/wiki/Xv6)<br><br> [xv6 book](https://pdos.csail.mit.edu/6.828/2014/xv6/book-rev8.pdf) |
 | **Swift** | OpenStack Object Store for scalable unstructured data storage and retrieval via a simple API. Designed for high availability and concurrency. |  4–64 GB RAM<br><br> 150 GB disk<br><br> Ubuntu 24.04 (bare-metal) |  Python (high) <br><br> Testing frameworks<br><br> Design patterns| [OpenStack Swift book](https://homepages.dcc.ufmg.br/~guimaluf/OpenStack%20Swift.pdf)<br><br> [Project management board](https://trello.com/b/BNO7afbX/swift)<br><br> [Swit - PPT](https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/presentation-media/Intel-OpenStack-Summit-Session-Nov13-Final.pptx)<br><br> [Implementing cloud storage with Openstack Swift - wiki](https://wiki.openstack.org/wiki/Swift) |
 
 ---
@@ -178,13 +174,53 @@ Detailed description on Code Reviews including scoreing that impacts the Maman/S
 
 | Date | Track | Presenter | Agenda  | Materials |
 | :---- | :---- | :----------------- | :---- | :---- |
-| 10/04  |    |    |  |   |
-| |  all  |  David S  | OSW Intro <br><br> Project demos, epics <br><br>**Bottom line**<br>During the next two weeks, read the materials covered today and assign yourself to one of the tracks (**eVSSIM**, or **Swift**).  | [slides](https://docs.google.com/presentation/d/1DVeQqusbW9-aeaO2kOeI0BXuaFloUJt0I9gsgdJPdA4/edit?slide=id.p1#slide=id.p1)  |
-| 19/04  |    |    |  |   |
-| |  eVSSIM  |  Michael Somekh, Amit Pur  | Linux VFS Evolution: 5.0.0 → 7.0.2 Case Study Using ramfs | [slides](https://docs.google.com/presentation/d/1xCAOuidF4_mH05gb-Lio5wN62X-gacR4ctEMuBZ4GFs/edit?usp=sharing)  |
-| |  eVSSIM  |Yuri Khordal, Aviv Barak Etedgui | | |
+|  21/03 |  all  |  David S  | OSW Intro <br><br> Project demos, epics <br><br>**Bottom line**<br>During the next two weeks, read the materials covered today and assign yourself to one of the tracks (**eVSSIM**, **xv6**, or **Swift**) in Table #2.  | [slides](https://docs.google.com/presentation/d/1DVeQqusbW9-aeaO2kOeI0BXuaFloUJt0I9gsgdJPdA4/edit?slide=id.p1#slide=id.p1)  |
+| 28/03  |    |    |  |   |
+|  |  all  |  David S  | Epics (cont)   | [slides](https://docs.google.com/presentation/d/1DVeQqusbW9-aeaO2kOeI0BXuaFloUJt0I9gsgdJPdA4/edit?slide=id.g3267fe28fd1_0_0#slide=id.g3267fe28fd1_0_0)  |
+|   |  eVSSIM  |  David S  | [NVME hands-on Lab](https://drive.google.com/file/d/0BxXKX8L4jdxTNzRLbVFWSzBwVWc/view?usp=sharing&resourcekey=0-apFWsUQejoBm5RlhcmUbCg) <br><br> [NVM express tutorial](https://www.flashmemorysummit.com/English/Collaterals/Proceedings/2013/20130812_PreConfD_Marks.pdf) <br><br> [Spec v1.3](https://nvmexpress.org/wp-content/uploads/NVM_Express_Revision_1.3.pdf) <br><br> [SSD performance](https://www.snia.org/sites/default/files/SNIASSSI.SSDPerformance-APrimer2013.pdf)  |   |
+| 25/04  |  swift  |  David S  |  [Ansible](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.5/html/getting_started_with_playbooks/index)  |  |
+|  |  swift  |  David S  |  Implementing Cloud Storage with OpenStack Swift - Chapter 1 - Cloud storage |  |
+| 09/05  |  swift  |  David S  | Implementing Cloud Storage with OpenStack Swift - Chapter 2 - Swift architecture  |  |
+|  |  swift  |  David S  | Implementing Cloud Storage with OpenStack Swift - Chapter 3 - Installing OpenStack Swift |  |
+|  |  swift   |  David S  | Implementing Cloud Storage with OpenStack Swift - Chapter 4 - Using Swift  |  |
+|  |  eVSSIM xv6  |  David S  | Linux kernel (based on R. Loves’ book): VFS <br> |  |
+| 23/05  |  |  |  |  |
+|  |  eVSSIM  | Alon A | FTL |  [slides](https://docs.google.com/presentation/d/1my5_bbWgFhnnlloTa5Pxkai4OSxgarVBsQhbhT6j2uI/edit?usp=sharing) |
+|  |  eVSSIM  | Adam Z | exofs architecture | [slides](https://docs.google.com/presentation/d/1YUrBsL8GRwxbBPeSmUCVjxNU2_5Gaep4/edit?usp=sharing&ouid=114210043453285298284&rtpof=true&sd=true) |
+|  |  xv6  | Michael K | container images | [slides](https://docs.google.com/presentation/d/1hrMXuFsIkfQDgCxA2O4ZCVTSRhQZNtnsPEndLp9HQAI/edit?usp=sharing) |
+|  | all | David S | Interrupts and Interrupt handlers, Linux kernel (by R. Love)  | [slides](https://docs.google.com/presentation/d/1XO-YfB2qImLTjXIruGpXVJXeDrkmOgQ_/edit?usp=sharing&ouid=114210043453285298284&rtpof=true&sd=true) |
+|  | all | David S | Bottom Halves and Defering Work, Linux kernel (by R. Love)  | [slides](https://docs.google.com/presentation/d/1ow_OR9B8cCFIzLCk9ozjRBIM6C32_SIN/edit?usp=sharing&ouid=114210043453285298284&rtpof=true&sd=true) |
+|  | all | David S | Block I/O layer, Linux kernel (by R. Love)  | [slides](https://docs.google.com/presentation/d/1sgRUyOfvxcV24kkv7FOdFyna9TTeVB_X/edit?usp=sharing&ouid=114210043453285298284&rtpof=true&sd=true) |
+| 20/06  |           |              | | |
+|        | eVSSIM    |  Itai S      | garbage collector | [slides](https://docs.google.com/presentation/d/15x-MLIVZo0iQqsirbAuYS1h_Zp_YvYl2/edit?usp=sharing&ouid=114210043453285298284&rtpof=true&sd=true) |
+|        | eVSSIM    |  Liel H      | eVSSIM tests - host | [slides](https://docs.google.com/presentation/d/1EQKOlzzC7mUnwzzrK4AQtr9CawkTEvLX/edit?usp=sharing&ouid=114210043453285298284&rtpof=true&sd=true) |  
+|        | eVSSIM    |  Rami K      | OSD setup, tracing open/read/write/close system calls in exofs | [slides](https://docs.google.com/presentation/d/190otJLGDnLUoXT7WOKrgU2spyLWO9j7KKPUGwokx6QY/edit?usp=drive_link) |
+|        | xv6       |  Naty M      | cgroups v1 | [slides](https://docs.google.com/presentation/d/1YrYPcJK6PvR7NO9Dp4133ibKObfI7oT1QG6OWmqJDjc/edit?usp=sharing) |
+|        | xv6       |  Maayan F / Ron S    | cgroups v2 | [slides](https://docs.google.com/presentation/d/1_5giLpeOZjmUVo2MckEboZtxMBevz7RIagI4tONb2is/edit?usp=sharing) |
+| 27/06  |           |              | | |      
+|        | eVSSIM    |  Emil K      | eVSSIM tests - guest | slides - TBU  |
+|        | swift     |  Yarin M     | object backend | [slides](https://docs.google.com/presentation/d/12R9bxEQH2NwA12QadWNF3EYV4YxDMvuNJqIgtOtIe6E/edit?usp=sharing) |
+|        | xv6       |  Tomer S     | container runtimes | [slides](https://docs.google.com/presentation/d/1OLeOfIN7t4mzVLMeX-VvZduplRxxiyWOEfFt6X7d-lw/edit?usp=sharing) |
+|        | eVSSIM    |  Ido T       | ONFI 1.0 | [slides](https://docs.google.com/presentation/d/12R9bxEQH2NwA12QadWNF3EYV4YxDMvuNJqIgtOtIe6E/edit?usp=sharing) |
+|        | eVSSIM    |  Leon G      | ELK | [slides](https://docs.google.com/presentation/d/1quZIyvyNDiRHfyn4jah5tmv6xPqP_Jbh4dsomWfm0lM/edit?usp=sharing) |
+|        | eVSSIM    |  Yonatan G   | jsonnet | [slides](https://docs.google.com/presentation/d/1k_ouD59qONIauOsDNHCS2KjvKN6AYTUzTBQcrddYrXo/edit?pli=1) |
+| 20/07<br>Sunday<br>11:00 | all | [Schlomo Schapiro](https://schlomo.schapiro.org/) | [Backup and Disaster Recovery: Business as Usual or What Needs to Change Now?](https://devopscon.io/devsecops/backup-disaster-recovery) | [Schlomo Schapiro](http://go.schapiro.org/schlomo) is an Agile IT and Open Source enthusiast dedicated to advancing an agile mindset and a [DevOps-orientated culture](https://schlomo.schapiro.org/p/5-devops-principles.html) in IT. He works as Associate Partner / Principal Engineer at [Tektit Consulting](https://tektitconsulting.com/) in Berlin, is author of several Open Source projects, conference [speaker](https://schlomo.schapiro.org/p/publications.html) and regularly publishes [blog](https://schlomo.schapiro.org/) and [magazine articles](https://schlomo.schapiro.org/p/publications.html). Schlomo focuses on IT strategy, IT governance, technology and architecture management, security and compliance automation, related organisational changes, business continuity, open source and cloud technologies - and is available as a Principal Engineer for short-term support. |
+                                                                    
 
+---
 
+## xv6 bucket
+
+| \# | Date/Time/Duration | Track/Presenter | Agenda  | presentation |
+| :---- | :---- | :---- | :---- | :---- |
+| 1 | 80m  \[TBD\]  | \[xv6\]\[TBD\] | Linux: Functional description and implementation details of docker containers   | Resources to use to build slides   [1st blogpost](https://medium.com/@nagarwal/understanding-the-docker-internals-7ccb052ce9fe) [2nd blogspot](http://docker-saigon.github.io/post/Docker-Internals/) |
+| 2 | 40m  \[TBD\]  | \[xv6\]\[TBD\] | Linux: Functional description and implementation details of OCI images | Resources to use to build slides [OCI images](https://github.com/saschagrunert/demystifying-containers/blob/master/part3-container-images/post.md) [CN landscape](https://landscape.cncf.io/) |
+| 3 | 40m \[TBD\]  | \[xv6\]/\[TBD\] | Ch 0 \- OS organisation Ch 1 \- Processes Ch 2 \- Page tables | [Slides](https://docs.google.com/presentation/d/1q2slhIb8ChafAfNzwg0IdRlrKENv9FJd_BYl58_MkEo/edit?usp=sharing) [Readthedocs Ch0](https://pekopeko11.sakura.ne.jp/unix_v6/xv6-book/en/Operating_system_interfaces.html) [Readthedocs Ch1](https://pekopeko11.sakura.ne.jp/unix_v6/xv6-book/en/The_first_process.html) [Readthedocs Ch2](https://pekopeko11.sakura.ne.jp/unix_v6/xv6-book/en/Page_tables.html)  |
+| 4 | 40m \[TBD\]  | \[xv6\]/\[TBD\] | Ch 3 \- Traps, interrupts, drivers Ch 4 \- Locking | [Slides](https://docs.google.com/presentation/d/1xFq0PQCV0SPw3LFCoPS-iPUipJKi1Pzp8u3zl7VKras/edit?usp=sharing) [Readthedocs Ch3](https://pekopeko11.sakura.ne.jp/unix_v6/xv6-book/en/Traps_interrupts_and_drivers.html) [Readthedocs Ch4](https://pekopeko11.sakura.ne.jp/unix_v6/xv6-book/en/Locking.html) |
+| 5 | 40m \[TBD\]  | \[xv6\]/\[TBD\] | Ch 5 \- Scheduling Ch 6 \- File system |  [Slides](https://docs.google.com/presentation/d/1rpoOB8jCDSq301x_6YslPbH3IO6VRqNM-azPNgQxw-8/edit?usp=sharing) [Alexander’s slides](https://drive.google.com/file/d/14QpfZ6BdJzlZlrqaGX4x-Ks-33L9x1nH/view?usp=sharing) [Readthedocs Ch5](https://pekopeko11.sakura.ne.jp/unix_v6/xv6-book/en/Scheduling.html) [Readthedocs Ch6](https://pekopeko11.sakura.ne.jp/unix_v6/xv6-book/en/File_system.html)  |
+| 6 | 40m  \[TBD\]  | \[xv6\]\[TBD\] | Object Stash VFS xv6-objfs kvector | Resources to use to build slides  [Object stash](https://docs.google.com/document/d/1YpDfT85IhfVCVH0u7MsKkB6S1c9IMvFeQJ9evFIceRw/edit?usp=sharing) [VFS](https://docs.google.com/document/d/1YpDfT85IhfVCVH0u7MsKkB6S1c9IMvFeQJ9evFIceRw/edit?usp=sharing) [Khhvector](https://docs.google.com/document/d/13Ty7odfMblpOsevRumxiUyczcxpWkJXc/edit)  |
+| 7 | 60m \[TBD\]  | \[xv6\]/\[TBD\] | Linux: Functional description and implementation details of  user namespace pid namespace  | [Slides](https://docs.google.com/presentation/d/1Ybh89fosohFD_hGj_1kvLchambh3aPuU7-RNxUpkKbM/edit?usp=sharing)  Live demo with code/scripts [userns](https://drive.google.com/file/d/1u8R9zipkmuRS_Knp4n_6SOY8zXox9Gst/view?usp=sharing) Pidns \- [part 4](https://lwn.net/Articles/532748/) Pidns \- [part 3](https://lwn.net/Articles/532271/) Pidns \- [part 2](https://lwn.net/Articles/531381/) Pidns \- [part 1](https://lwn.net/Articles/531114/)  |
+| 8 | 60m \[TBD\]  | \[xv6\]/\[TBD\] | Linux: Functional description and implementation details of Mount ns UTS ns cgroups    | [slides](https://docs.google.com/presentation/d/1xGywNANNmMKw6-SFsXZ7xX5mVoeXAJW1cp_96EKTnDM/edit?usp=sharing)  [Slides](https://docs.google.com/presentation/d/1J2FjVi63XpMh_Obhua-Iahap5Ub570CMn-qCOgGq5Ko/edit?usp=sharing) (same \+ cgroups \+ minor enhancements \- visibility)  Live demo with code/scripts [UTS namespaces demo](https://trello.com/c/JDOQMric/29-maman-12-linux-tests-for-uts-namespace) |
 
 ---
 ## Linux kernel bucket
@@ -261,6 +297,9 @@ see TALKS column on the Trello board
 
 * [Meetup: Open meets Opensource](https://sites.google.com/site/openuopensource/home/meetup-2016-dec-18)
 
+**Xv6**
+
+* OS interfaces \- [system call workshop](https://github.com/ranl/xv6-public/wiki)
 
 **OpenStack**
 
