@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Cool OSW projects.
+hide_header: true
 nav: true
 nav_order: 3
-display_categories: [2024]
+display_categories: [2026, 2025, 2024]
 horizontal: false
 ---
 
@@ -15,7 +15,7 @@ horizontal: false
   <!-- Display categorized projects -->
   {%- for category in page.display_categories %}
   <h2 class="category">{{ category }}</h2>
-  {%- assign categorized_projects = site.projects | where: "category", category -%}
+  {%- assign categorized_projects = site.projects | where_exp: "project", "project.category contains category" -%}
   {%- assign sorted_projects = categorized_projects | sort: "importance" %}
   <!-- Generate cards for each project -->
   {% if page.horizontal -%}
@@ -27,7 +27,7 @@ horizontal: false
     </div>
   </div>
   {%- else -%}
-  <div class="grid">
+  <div class="card-grid mb-4">
     {%- for project in sorted_projects -%}
       {% include projects.html %}
     {%- endfor %}
@@ -48,7 +48,7 @@ horizontal: false
     </div>
   </div>
   {%- else -%}
-  <div class="grid">
+  <div class="card-grid mb-4">
     {%- for project in sorted_projects -%}
       {% include projects.html %}
     {%- endfor %}

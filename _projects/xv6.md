@@ -4,7 +4,7 @@ title: xv6
 description: xv6 with containters
 img:
 importance: 2
-category: 2024 
+category: [2024, 2025]
 ---
 
 Container technologies popularity increased through the past decade and this tendency is expected to continue. The influence of containers is prominent in many ways spanning every aspect of the programming product lifecycle from the design and architecture considerations, followed by the programming language adoption and ending with the product deployment and production environment maintenance. 

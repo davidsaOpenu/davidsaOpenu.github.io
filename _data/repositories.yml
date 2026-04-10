@@ -1,8 +1,28 @@
-github_repos:
-  - davidsaOpenu/xv6 
-  - davidsaOpenu/simulator
-  - davidsaOpenu/kernel
-  - davidsaOpenu/nvme-cli
-  - davidsaOpenu/qemu
-  - davidsaOpenu/dnvme
-  - dsariel/swiftacular
+# Repositories shown on /repositories/, grouped by workshop project.
+# Each repo links to its project page on GerritHub, where changes are reviewed.
+gerrit_host: https://review.gerrithub.io
+gerrit_owner: davidsaOpenu
+
+groups:
+  - name: eVSSIM
+    repos:
+      - name: simulator
+        description: eVSSIM SSD simulator - FTL, NAND model, and performance evaluation
+      - name: qemu
+        description: QEMU/KVM with the eVSSIM NVMe device exposed to the guest OS
+      - name: kernel
+        description: Linux kernel used by the eVSSIM guest
+      - name: nvme-cli
+        description: NVMe management command line interface
+      - name: dnvme
+        description: Linux driver for the NVMe compliance suite
+      - name: tnvme
+        description: NVMe compliance test suite that runs on top of dnvme
+  - name: swiftacular
+    repos:
+      - name: swiftacular
+        description: Deploy an OpenStack Swift cluster with Ansible and Vagrant
+  - name: xv6
+    repos:
+      - name: xv6
+        description: xv6 teaching OS extended with namespaces, cgroups, and containers

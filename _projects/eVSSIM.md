@@ -4,7 +4,7 @@ title: eVSSIM
 description: SSD simulator
 img:
 importance: 1
-category: 2024 
+category: [2024, 2025, 2026]
 ---
 
 Diving into Flash device issues usually means delving deep into crafting, testing, and assessing new-fangled algorithms and methods tailored for these devices. Picture poring over Flash device specs, crafting device drivers (or dissecting an existing one), tweaking both the device driver and OS to seamlessly integrate your freshly minted algorithms, and finally, conducting a meticulous performance evaluation using enterprise workloads. This whole process demands not just mad skills in OS and device-driver development but also an encyclopedic grasp of Flash device specifications.
@@ -19,6 +19,6 @@ VSSIM article: [here](https://storageconference.us/2013/Papers/2013.Paper.24.pdf
 
 eVSSIM architecture: [here](https://docs.google.com/document/d/1aUu52nZrOxcQpi-DqoNe_TlaMPB6VwYvGMcjlq4gTp0/edit?usp=sharing)
 
-Project management board: [here](https://trello.com/b/sRviWvmR/simulator-evssim)
+Project management board: [here](https://trello.com/b/eMxey6Rr/osw-evssim-and-swiftacular)
 
 NVME spec: [here](https://nvmexpress.org/specifications)
